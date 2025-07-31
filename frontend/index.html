@@ -3,16 +3,22 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Film Ratings</title>
-  <link rel="stylesheet" href="styles.css"/>
+  <title>Film Rating App</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <div class="container">
-    <h1>Top Rated Films</h1>
-    <input type="text" id="search" placeholder="Search by title...">
-    <div id="film-list"></div>
+  <div class="app-container">
+    <h1>🎬 Film Rating App</h1>
+    <div class="controls">
+      <input type="text" id="searchInput" placeholder="Search for a movie..." />
+      <select id="sortSelect">
+        <option value="default">Sort by</option>
+        <option value="rating">IMDb Rating</option>
+        <option value="year">Release Year</option>
+      </select>
+    </div>
+    <div id="resultsContainer"></div>
   </div>
   <script src="script.js"></script>
 </body>
 </html>
-
